@@ -661,8 +661,6 @@ int t3_term_init(int fd, const char *term) {
   struct termios new_params;
   t3_bool detect_terminal_size = t3_false;
 
-  init_log();
-
   if (initialised) {
     return T3_ERR_SUCCESS;
   }
